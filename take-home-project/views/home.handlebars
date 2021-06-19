@@ -1,0 +1,17 @@
+<!-- home.handlebars -->
+<h1>Enter Your Mood</h1>
+<ul>
+  {{#each daily }}
+
+    <li class="list-group-item">
+      <div class="lead">
+        <p>{{this}}</p>
+      </div>
+    </li>
+
+    <form action="/">
+      <input type="text" name="Mood">
+      <button type="submit">Enter</button>
+    </form>
+  {{/each}}
+</ul>
